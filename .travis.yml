@@ -2,4 +2,4 @@ sudo: required
 services: -docker
 before_install:
     - docker build -t maipal/docker-flow -f Dockerfile.dev .
-script: -docker run maipal/docker-flow npm run test -- --coverage
+script: -docker run -e CI=true maipal/docker-flow npm run test
