@@ -13,6 +13,6 @@ deploy:
     bucket_name: "elasticbeanstalk-ap-south-1-991425440433"
     on:
         branch: main
-    access_key_id: "AKIA6NVMPVKYYZGQMEHJ"
+    access_key_id: "AKIA6NVMPVKYU2ATB3XJ"
     secret_access_key:
-        secure: $AWS_SECRET_KEY
+        secure: "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"
