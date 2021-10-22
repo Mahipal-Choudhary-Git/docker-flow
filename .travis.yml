@@ -6,7 +6,7 @@ before_install:
 #   - docker build -t maipal/docker-flow -f Dockerfile.dev .
 script:
     - echo $SECRET_ACCESS_KEY
-    - echo $ACCESS_KEY_ID
+    - echo $ACCESS_KEY_ID[0]
 #   - docker run -e CI=true maipal/docker-flow npm run test
 deploy:
     provider: elasticbeanstalk
