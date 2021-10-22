@@ -5,7 +5,7 @@ before_install:
     - echo "builded"
 #   - docker build -t maipal/docker-flow -f Dockerfile.dev .
 script:
-    - echo $SECRET_ACCESS_KEY
+#    - echo $SECRET_ACCESS_KEY
     - echo $AWS_ACCESS_KEY
 #   - docker run -e CI=true maipal/docker-flow npm run test
 deploy:
