@@ -8,9 +8,8 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
-    app: "docker-flow"
-    env: "Dockerflow-env-1"
-    bucket_path: "docker"
+    app: "docker-flow2"
+    env: "Dockerflow2-env"
     bucket_name: "elasticbeanstalk-ap-south-1-991425440433"
     on:
         branch: main
