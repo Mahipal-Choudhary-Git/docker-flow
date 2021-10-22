@@ -8,11 +8,12 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
-    app: "docker_flow"
+    app: "docker-flow"
     env: "Dockerflow-env-1"
+    bucket_path: "docker"
     bucket_name: "elasticbeanstalk-ap-south-1-991425440433"
     on:
         branch: main
-    access_key_id: "AKIA6NVMPVKYU2ATB3XJ"
+    access_key_id: $AWS_ACCESS_KEY
     secret_access_key:
-        secure: "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"
+        secure: $AWS_SECRET_KEY
