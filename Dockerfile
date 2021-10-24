@@ -1,6 +1,6 @@
-FROM node:alpine as builder
+FROM node:alpine
 WORKDIR /app
-COPY package.json .
+COPY package*.json .
 RUN yarn install
 copy . .
 RUN yarn run build
