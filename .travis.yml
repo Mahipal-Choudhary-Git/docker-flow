@@ -1,15 +1,15 @@
 sudo: required
 services:
     - docker
-before_install: 
+before_install:
     - docker build -t maipal/docker-flow -f Dockerfile.dev .
-script: 
+script:
     - docker run -e CI=true maipal/docker-flow npm run test
 deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
-    app: "docker-flow2"
-    env: "Dockerflow2-env"
+    app: "docker-flow"
+    env: "Dockerflow-env-1"
     bucket_name: "elasticbeanstalk-ap-south-1-991425440433"
     on:
         branch: main
